@@ -1,0 +1,40 @@
+.menu {
+  &__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &--header {
+      @include onSmartphone {
+        display: flex;
+        gap: 39px;
+      }
+  
+      @include onTablet {
+        gap: 48px;
+      }
+    }
+
+    &--footer {
+      @include onSmartphone {
+        display: flex;
+        gap: 40px;
+      }
+  
+      @include onTablet {
+        gap: 64px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+
+    color: $white-color;
+    text-transform: uppercase;
+  }
+}
